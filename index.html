@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Typed ToDo - By Haziz Feroz Khan</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<nav>
+    <h1>Typed ToDo</h1>
+</nav>
+<section id="add">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-9  col-xs-12">
+                <input id="addTask" placeholder="Write Task Here!" maxlength="40">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3  col-xm-12">
+                <button class="btn" onclick="addTask(input, row)">
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="lists">
+    <div class="container-fluid">
+        <div class="row" id="row">
+            <div><div
+                    class="col-lg-10 col-md-10 col-sm-10 col-xs-12"><i
+                        class="fa fa-square-o fa-2x" aria-hidden="true" onclick="checkBoxClick(this)"></i><span
+                        class="unchecked">This Is Task Example One</span></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn edit" onclick="editItem(this)">Edit</button>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn dlt" onclick="deleteItem(this)">Delete</button>
+                </div>
+            </div>
+
+            <div><div
+                    class="col-lg-10 col-md-10 col-sm-10 col-xs-12"><i
+                        class="fa fa-check-square-o fa-2x" aria-hidden="true" onclick="checkBoxClick(this)"></i><span
+                        class="checked">This Is Task Example Two</span></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn edit" onclick="editItem(this)">Edit</button>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn dlt" onclick="deleteItem(this)">Delete</button>
+                </div>
+            </div>
+            <div><div
+                    class="col-lg-10 col-md-10 col-sm-10 col-xs-12"><i
+                        class="fa fa-square-o fa-2x" aria-hidden="true" onclick="checkBoxClick(this)"></i><span
+                        class="unchecked">This Is Task Example Three</span></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn edit" onclick="editItem(this)">Edit</button>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <button class="btn dlt" onclick="deleteItem(this)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="scripts/app.js"></script>
+</body>
+</html>
